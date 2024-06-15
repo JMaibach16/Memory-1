@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+*, body, html {
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif"
+}
+.Reihe {
+    text-align: center;
+}
+.Karte {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    background-color: gray;
+    cursor: pointer;
+}
+.Katze:active {
+    background-image: url("assets/cat.png");
+    background-size: 300px 300px;
+}
+.Hund:active {
+    background-image: url("assets/dog.png");
+    background-size: 300px 300px;
+}
+.Haus:active {
+    background-image: url("assets/house.png");
+    background-size: 300px 300px;
+}
+.Schaf:active {
+    background-image: url("assets/sheep.png");
+    background-size: 300px 300px;
+}
