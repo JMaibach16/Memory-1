@@ -12,31 +12,25 @@
     <p>Player 2: 0 Punkte</p>
     </div>
     <div class="Reihe">
-        <div class="Karte Katze"></div>
-        <div class="Karte Hund"></div>
-        <div class="Karte Schaf"></div>
-        <div class="Karte Haus"></div>
+        <div class="Karte hidden Katze"></div>
+        <div class="Karte hidden Hund"></div>
+        <div class="Karte hidden Schaf"></div>
+        <div class="Karte hidden Haus"></div>
     </div>
 
     <div class="Reihe">
-        <div class="Karte Schaf"></div>
-        <div class="Karte Katze"></div>
-        <div class="Karte Haus"></div>
-        <div class="Karte Hund"></div>
+        <div class="Karte hidden Schaf"></div>
+        <div class="Karte hidden Katze"></div>
+        <div class="Karte hidden Haus"></div>
+        <div class="Karte hidden Hund"></div>
     </div>
 <script>
+    const cards = document.querySelectorAll(".Karte");
+    for (const card of cards) {
+        card.addEventListener("click", function() {
+            card.classList.remove("hidden");
+        })
+    }
 </script>
 </body>
 </html>
-
-<!-- 
-<img src="assets/cat.png" width="100px" alt="">
-    <img src="assets/cat.png" width="250px" alt="">
-    <img src="assets/dog.png" width="250px" alt="">
-    <img src="assets/house.png" width="250px" alt="">
-    <img src="assets/sheep.png" width="250px" alt="">
-    <br>
-    <img src="assets/sheep.png" width="250px" alt="">
-    <img src="assets/cat.png" width="250px" alt="">
-    <img src="assets/house.png" width="250px" alt="">
-    <img src="assets/dog.png" width="250px" alt="">
