@@ -8,8 +8,8 @@
 
 <body>
     <div id="Player">
-    <p>Player 1: 0 Punkte</p>
-    <p>Player 2: 0 Punkte</p>
+    <p id="Player1">Player 1: 0 Punkte</p>
+    <p id="Player2">Player 2: 0 Punkte</p>
     </div>
     <div class="Reihe">
         <div class="Karte hidden Katze"></div>
@@ -28,7 +28,11 @@
     const cards = document.querySelectorAll(".Karte");
     for (const card of cards) {
         card.addEventListener("click", function() {
-            card.classList.remove("hidden");
+            if (card.classList.contains("hidden")) {
+                card.classList.remove("hidden");
+            } else {
+                card.classList.add("hidden");
+            }
         })
     }
 </script>
